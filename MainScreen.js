@@ -85,16 +85,16 @@ function MainScreen()
       Current_Music = Music1
       CURRENT_SCREEN = GAME_SCREEN
       
-      console.log(StartTime1)
-      StartTime2 = 0
+      
+      StartTime = millis()
       
     }
     if(Play_Button_X && Play_Button2_Y)
     {
       Current_Music = Music2
       CURRENT_SCREEN = GAME_SCREEN
+      StartTime = millis()
       
-      console.log(StartTime2)
       
       
       
@@ -117,7 +117,7 @@ function MainScreen()
       case Music2: 
       if(CURRENT_SCREEN = GAME_SCREEN)
       {
-        Music_Play(Cool,2)
+        Music_Play(Cool)
       }
       else 
       {

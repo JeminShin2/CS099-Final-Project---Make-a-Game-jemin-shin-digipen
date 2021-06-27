@@ -28,8 +28,8 @@ let Music_Score = 0
 let Music_Combo = 0
 let Music_Event 
 
-let StartTime1
-let StartTime2
+let StartTime
+
 
 function setup()
  {
