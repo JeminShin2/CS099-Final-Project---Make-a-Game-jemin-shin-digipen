@@ -30,6 +30,9 @@ let Music_Event
 
 let StartTime
 
+let Timer = 0
+ 
+
 
 function setup()
  {
@@ -50,10 +53,24 @@ function setup()
   function draw() 
   {
     
+    
+    
+    
+    
+  
+  
+  
     image(Start_Screen_Button,0,0,width,height)
     push()
     fill(0,100)
     rect(0,0,800,800)
+    pop()
+    
+    push()
+    fill(255)
+    textSize(40)
+    text(int(Timer),width/2 , height /2)
+    text(int(millis()),width/2 , height /2+100)
     pop()
     
     switch(CURRENT_SCREEN)

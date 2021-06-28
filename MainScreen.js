@@ -6,6 +6,7 @@
 
 function MainScreen()
 {
+  
     
   let Rect_color1 = 50
   let Rect_color2 = 50
@@ -50,7 +51,7 @@ function MainScreen()
   fill(255)
   textSize(50)
   textFont(Font)
-  text('Need-U_',220,320)
+  text('Tobu-Need-U_',220,320)
   text('Tobu-Cool_ ',220,440)
 
   pop()
@@ -84,9 +85,9 @@ function MainScreen()
     {
       Current_Music = Music1
       CURRENT_SCREEN = GAME_SCREEN
+      Day.stop()
       
       
-      StartTime = millis()
       
     }
     if(Play_Button_X && Play_Button2_Y)
@@ -94,7 +95,9 @@ function MainScreen()
       Current_Music = Music2
       CURRENT_SCREEN = GAME_SCREEN
       StartTime = millis()
+      Day.stop()
       
+     
       
       
       
@@ -108,6 +111,7 @@ function MainScreen()
       if(CURRENT_SCREEN = GAME_SCREEN)
       {
         Music_Play(Need_U)
+        
       }
       else
       { 
@@ -118,6 +122,7 @@ function MainScreen()
       if(CURRENT_SCREEN = GAME_SCREEN)
       {
         Music_Play(Cool)
+        
       }
       else 
       {

@@ -70,12 +70,13 @@ function StartScreen()
     {
      if (Start_mouseX_Range && Start_mouseY_Range) 
         {
-          
+          Day.play()
           CURRENT_SCREEN = MAIN_SCREEN
         }
       
      if(Credit_mouseX_Range && Credit_mouseY_Range)
         {
+          Timer = Timer - Timer
           push()
           fill(255,50)
           rect(100,100,600,600,20)
@@ -86,6 +87,8 @@ function StartScreen()
           text('Background_image = https://wallhere.com/ko/wallpaper/1735025',120,500)
           text('Font - https://www.dafont.com/largelake.font',120,550)
           text('Sound,Programming,Design By Jemin.Shin',120,600)
+          text('BackGround_music is handmade by using FlStudio',120,650)
+          text('Join my Game "3" ',120,680)
           pop()
           
         }

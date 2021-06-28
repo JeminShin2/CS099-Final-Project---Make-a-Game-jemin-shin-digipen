@@ -5,7 +5,7 @@
 
 function GameScreen()
 {
-    
+   Timer = Timer+ 1.666666 *10
   //Game Bar
   fill(204)
   let GameX = width/10
@@ -32,6 +32,10 @@ function GameScreen()
         Current_Music =Music3
         Cool.stop()
         Need_U.stop()
+        Day.play()
+        Timer = 0
+        Music_Score = 0
+        Music_Combo = 0
     }
   }
 
@@ -173,16 +177,23 @@ function GameScreen()
     pop()
 
 
-   push()
-   stroke(0)
-   textSize(50)
-   fill(255)
-   text(int(Music_Score),80,750)
-   pop()
+   
+   
+   
+   
+   
+   
 
 
    if(Music_Combo > 0)
    {
+    push()
+    stroke(0)
+    textSize(50)
+    fill(255)
+    text(int(Music_Score),80,750)
+    pop()
+
     push()
     textSize(30)
     stroke(0)

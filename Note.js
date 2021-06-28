@@ -10,14 +10,14 @@ class Note
     this.X = X
     this.Y = Y
     this.hide_speed = hide_speed
-    this.time = millis()
-    this.spawn = spawn 
+    this.time = Timer
+    this.spawn = spawn -1950
     this.Life = 30
   }  
 
   draw()
   {
-    this.time = millis()
+    this.time =  Timer+ 1.666666 *10
     
       if(this.time > this.spawn )
       {
