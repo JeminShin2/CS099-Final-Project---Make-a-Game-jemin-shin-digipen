@@ -30,8 +30,8 @@ function StartScreen()
   let Credit_mouseX_Range = mouseX > StartButton.x && mouseX <StartButton.x+StartButton.width
   let Credit_mouseY_Range =  mouseY > StartButton.y+100 && mouseY < StartButton.y+100+StartButton.height
 
-  let Options_mouseX_Range = mouseX > StartButton.x && mouseX <StartButton.x+StartButton.width
-  let Options_mouseY_Range = mouseY > StartButton.y+200 && mouseY < StartButton.y+200+StartButton.height
+  let How_to_mouseX_Range = mouseX > StartButton.x && mouseX <StartButton.x+StartButton.width
+  let How_to_mouseY_Range = mouseY > StartButton.y+200 && mouseY < StartButton.y+200+StartButton.height
   let Rect_color = 0
   
   push()
@@ -92,9 +92,14 @@ function StartScreen()
           pop()
           
         }
-     if(Options_mouseX_Range && Options_mouseY_Range)
+     if(How_to_mouseX_Range && How_to_mouseY_Range)
         {
           image(How_to,100,100,600,600)
+          push()
+          textSize(40)
+          fill(255)
+          text('Play key is   A  S  D  F  J  K  L  ;',100,750)
+          pop()
         }
     }
   };          

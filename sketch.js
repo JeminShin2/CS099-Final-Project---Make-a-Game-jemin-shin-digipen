@@ -67,6 +67,12 @@ function setup()
     pop()
     
     
+    
+    
+    
+    
+    
+    
     switch(CURRENT_SCREEN)
     {
       case START_SCREEN:
